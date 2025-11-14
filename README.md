@@ -1,59 +1,238 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Verdea - Sustainable Fashion Website
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/img/logo.png" width="200" alt="Verdea Logo">
 </p>
 
-## About Laravel
+<p align="center">
+  <em>Where Fashion Meets Sustainability</em>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About Verdea
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Verdea** is a forward-thinking sustainable fashion company that transforms textile waste into stylish, eco-friendly products. Our name combines *verde* (green) and *idea*, symbolizing our commitment to innovative, environmentally conscious solutions.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Our Mission
+To create smart solutions that reduce carbon footprints, conserve resources, and promote circular economies through upcycled products.
 
-## Learning Laravel
+### Our Vision
+To become a widely recognized brand for innovative, ethically-made, eco-friendly bags that blend style with purpose.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### What We Do
+- **♻️ Upcycled Products**: Transform old clothes into durable, customizable tote bags
+- **🌱 92M Tonnes Impact**: Help reduce the 92 million tonnes of textile waste produced yearly
+- **🤝 Community Support**: Work with local tailors in Taytay, Rizal, Philippines
+- **💚 Sustainable Innovation**: Maximize fabric usage and minimize waste in every product
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Website Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+This is a modern, single-page Laravel website showcasing Verdea's sustainable fashion products with:
 
-### Premium Partners
+- 🎨 **Modern Design**: Clean, responsive design with parallax effects and smooth animations
+- 📱 **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- ♿ **Accessible**: Semantic HTML with proper ARIA labels
+- 🚀 **Fast Performance**: Optimized assets and efficient loading
+- 🎯 **SEO Ready**: Proper meta tags and semantic structure
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Sections
+1. **Hero** - Eye-catching introduction with floating product showcase
+2. **About** - Company story, mission, and values
+3. **Vision & Mission** - Core principles and sustainable practices
+4. **Products** - NuVida tote bag collection with customization options
+5. **Impact** - Environmental and community impact statistics
+6. **CTA** - Call-to-action with customer statistics
+7. **Footer** - Company links and social media
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Requirements
 
-## Code of Conduct
+Before you begin, ensure you have the following installed:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **PHP** >= 8.2
+- **Composer** (PHP dependency manager)
+- **Node.js** >= 18.x (optional, for asset compilation)
+- **MySQL/PostgreSQL** (optional, if you plan to add database features)
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone <your-repository-url>
+cd verdea
+```
+
+### 2. Install PHP Dependencies
+```bash
+composer install
+```
+
+### 3. Environment Configuration
+Copy the example environment file and generate application key:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+### 4. Configure Environment (Optional)
+Edit `.env` file if you need database or other configurations:
+```env
+APP_NAME=Verdea
+APP_URL=http://localhost:8000
+
+# Database configuration (if needed)
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=verdea
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Storage Permissions
+Ensure storage and cache directories are writable:
+```bash
+# Windows (PowerShell)
+# No action needed, Laravel handles this automatically
+
+# Linux/Mac
+chmod -R 775 storage bootstrap/cache
+```
+
+---
+
+## Running the Application
+
+### Development Server
+
+Start the Laravel development server:
+```bash
+php artisan serve
+```
+
+The website will be available at: **http://127.0.0.1:8000**
+
+### Alternative Port
+If port 8000 is busy, specify a different port:
+```bash
+php artisan serve --port=8080
+```
+
+---
+
+## Project Structure
+
+```
+verdea/
+├── app/                    # Application logic
+├── public/                 # Public assets
+│   ├── img/               # Images (logo, leaf background)
+│   └── site-prototype/    # CSS and JavaScript files
+├── resources/
+│   └── views/
+│       └── site/          # Blade templates
+│           └── index.blade.php  # Main single-page website
+├── routes/
+│   └── web.php            # Web routes
+├── extracted_verdea/      # PDF extraction data
+└── README.md
+```
+
+---
+
+## Key Files
+
+- **`resources/views/site/index.blade.php`** - Main website template
+- **`public/site-prototype/styles.css`** - All styling and animations
+- **`public/site-prototype/app.js`** - JavaScript for parallax and scroll effects
+- **`routes/web.php`** - Route definitions
+- **`public/img/`** - Logo and images
+
+---
+
+## Customization
+
+### Updating Content
+Edit `resources/views/site/index.blade.php` to modify:
+- Text content
+- Product descriptions
+- Statistics and impact numbers
+- Contact information
+
+### Changing Colors
+Edit `public/site-prototype/styles.css` and modify CSS variables:
+```css
+:root {
+  --accent: #2f9d63;        /* Primary green */
+  --accent-dark: #1d6340;   /* Dark green */
+  --accent-light: #4db87d;  /* Light green */
+}
+```
+
+### Adding Images
+Place images in `public/img/` and reference them in Blade templates:
+```php
+<img src="{{ asset('img/your-image.jpg') }}" alt="Description">
+```
+
+---
+
+## Deployment
+
+### Production Checklist
+1. Set `APP_ENV=production` in `.env`
+2. Set `APP_DEBUG=false` in `.env`
+3. Run `php artisan config:cache`
+4. Run `php artisan route:cache`
+5. Run `php artisan view:cache`
+6. Ensure proper file permissions on server
+
+### Recommended Hosting
+- **Shared Hosting**: Use Laravel-compatible hosts (e.g., Hostinger, SiteGround)
+- **VPS**: DigitalOcean, AWS, or Linode with LAMP/LEMP stack
+- **Platform-as-a-Service**: Laravel Forge, Heroku, or Vercel
+
+---
+
+## Browser Support
+
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## Credits
+
+- **Framework**: [Laravel](https://laravel.com)
+- **Fonts**: [Google Fonts](https://fonts.google.com) (Inter, Montserrat)
+- **Images**: [Unsplash](https://unsplash.com)
+- **Icons**: Custom SVG icons
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is proprietary software owned by Verdea. All rights reserved.
+
+---
+
+## Contact & Support
+
+- **Email**: info@verdea.com
+- **Location**: Taytay, Rizal, Philippines
+- **Phone**: +63 123 456 7890
+
+---
+
+<p align="center">
+  <strong>Smart Solutions, Sustainable World</strong>
+  <br>
+  Made with 💚 by Verdea Team
+</p>
